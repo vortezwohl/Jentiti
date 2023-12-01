@@ -37,7 +37,7 @@ public static void main(String[] args){
 ```
 
 # Expansion
-You can do some extra enhancement to an entity or some entities by implementing EntityPostProcessor. Once your class implements this interface, the method postInstantiation would be invoked during instantiation of entities.
+You can do some extra enhancement to an entity or some entities by implementing [EntityPostProcessor](https://github.com/vortezwohl/Jentiti/blob/main/org/jentiti/xtend/intf/EntityPostProcessor.java). Once your class implements this interface, the method postInstantiation would be invoked during instantiation of entities.
 ```
 package org.jentiti.xtend.intf;
 
