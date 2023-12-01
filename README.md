@@ -12,6 +12,17 @@ Jentiti is an IoC container for entities or pojos.
 @Jsonify // Enhance toString() method for an entity to return JSON string.
 
 ```
+```
+(Example)
+
+@Entity(scope = "singleton")
+@Jsonify
+public class User{
+    ...fields...
+    ...methods...
+    etc.
+}
+```
 
 # IoC container
 When you instantiated an EntityContext object. Entities are loaded to the container or you would call it a factory. You can use method get([Entity name or class]) to get the entity you need.
@@ -21,6 +32,7 @@ When you instantiated an EntityContext object. Entities are loaded to the contai
 public static void main(String[] args){
     EntityContext context = new EntityContext();
     User user = (User) context.get("user");
+    System.out.println(user);
 }
 ```
 
