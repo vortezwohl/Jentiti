@@ -15,6 +15,7 @@ Jentiti is an IoC container for entities or pojos.
 
 # Expansion
 You can do some extra enhancement to an entity or some entities by implementing EntityPostProcessor.
+Once your class implements this interface, the method postInstantiation would be invoked during instantiation of entities.
 ```
 package org.jentiti.xtend.intf;
 
