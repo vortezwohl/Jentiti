@@ -1,7 +1,7 @@
 # Jentiti
 Jentiti is an IoC container for entities or pojos.
 
-# How to use
+# Annotations
 ```
 @Entity(value = [Name for entity], scope = [“singleton” or "prototype"]) // Could be used on public Classes or Annotations.
 
@@ -13,9 +13,19 @@ Jentiti is an IoC container for entities or pojos.
 
 ```
 
+# IoC container
+When you instantiated an EntityContext object. Entities are loaded to the container or you would call it a factory. You can use method get([Entity name or class]) to get the entity you need.
+```
+(Example)
+
+public static void main(String[] args){
+    EntityContext context = new EntityContext();
+    User user = (User) context.get("user");
+}
+```
+
 # Expansion
-You can do some extra enhancement to an entity or some entities by implementing EntityPostProcessor.
-Once your class implements this interface, the method postInstantiation would be invoked during instantiation of entities.
+You can do some extra enhancement to an entity or some entities by implementing EntityPostProcessor. Once your class implements this interface, the method postInstantiation would be invoked during instantiation of entities.
 ```
 package org.jentiti.xtend.intf;
 
