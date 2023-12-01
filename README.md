@@ -1,2 +1,2 @@
 # Jentiti
-Jentiti is an IoC container for entities and pojos.
+Jentiti is an IoC container for entities or pojos.
