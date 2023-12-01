@@ -25,7 +25,7 @@ public class User{
 ```
 
 # IoC container
-When you instantiated an EntityContext object. Entities are loaded to the container or you would call it a factory. You can use method get([Entity name or class]) to get the entity you need.
+When you instantiated an [EntityContext](https://github.com/vortezwohl/Jentiti/blob/main/org/jentiti/context/EntityContext.java) object. Entities are loaded to the container or you would call it a factory. You can use method get([Entity name or class]) to get the entity you need.
 ```
 (Example)
 
